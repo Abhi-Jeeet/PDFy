@@ -1,4 +1,4 @@
-# PDFy
+# PDFy (Revolutionizing PDF Interaction with Deepseek AI!)
 
 This application allows users to upload PDF files, extract text from them, and ask questions about the content. The backend processes the uploaded PDF files, handles text extraction, chunking, and question answering using large language models (LLMs). The frontend provides a user-friendly interface for interacting with the backend services.
 
