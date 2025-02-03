@@ -34,7 +34,7 @@ class PDFProcessor:
         chunks = text_splitter.split_text(self.text)
         
         # Create embeddings and vector store using Ollama
-        embeddings = OllamaEmbeddings(model="llama3.2")  # You can change the model as needed
+        embeddings = OllamaEmbeddings(model="deepseek-coder")  # You can change the model as needed
         vector_store = FAISS.from_texts(chunks, embeddings)
         return vector_store
     
@@ -44,7 +44,7 @@ class PDFProcessor:
         docs = self.vector_store.similarity_search(question)
         
         # Create QA chain with Ollama
-        llm = Ollama(model="llama3.2")  
+        llm = Ollama(model="deepseek-coder")  
         chain = load_qa_chain(llm, chain_type="stuff")
         
         # Get answer

@@ -96,15 +96,7 @@ const QuestionSection = ({ filename, onError }) => {
                   {message.type === "user" ? (
                     "U"
                   ) : (
-                    <img
-                      src={ai}
-                      alt="AI"
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
+                   "AI"
                   )}
                 </Avatar>
                 <Typography>{message.content}</Typography>

@@ -36,13 +36,15 @@ function App() {
           height: "80px",
         }}
       >
-        <img
-          src={logo}
-          alt="Planet Logo"
-          className="logo"
-          height={50}
-          width={150}
-        />
+        <Box
+          sx={{
+            fontSize: "24px",
+            fontWeight: "bold",
+            color: "#333",
+          }}
+        >
+          PDFy
+        </Box>
         <Box
           sx={{ marginLeft: "auto", paddingTop: "10px", marginRight: "30px" }}
         >
