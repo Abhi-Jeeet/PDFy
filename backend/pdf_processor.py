@@ -34,7 +34,7 @@ class PDFProcessor:
         chunks = text_splitter.split_text(self.text)
         
         # Create embeddings and vector store using Ollama
-        embeddings = OllamaEmbeddings(model="deepseek-coder")  # You can change the model as needed
+        embeddings = OllamaEmbeddings(model="deepseek-coder")  
         vector_store = FAISS.from_texts(chunks, embeddings)
         return vector_store
     
