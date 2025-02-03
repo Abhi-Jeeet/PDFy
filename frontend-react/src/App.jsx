@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Container, Box, CircularProgress, Alert } from "@mui/material";
+import {Box, CircularProgress, Alert } from "@mui/material";
 import FileUpload from "./components/FileUpload";
 import QuestionSection from "./components/QuestionSection";
 import "./App.css";
-import logo from "./assets/aiplanet.svg";
+
 
 function App() {
   const [currentFile, setCurrentFile] = useState(null);

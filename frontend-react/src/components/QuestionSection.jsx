@@ -11,7 +11,6 @@ import {
 import SendIcon from "@mui/icons-material/Send";
 import axios from "axios";
 
-import ai from "../assets/AI.png";
 
 const QuestionSection = ({ filename, onError }) => {
   const [question, setQuestion] = useState("");
